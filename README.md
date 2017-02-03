@@ -1,5 +1,5 @@
 # Syntax highlighter
-![Package link for language-perl6 package][language-perl6]
+[Package link for language-perl6 package][language-perl6]
 ## Instructions
 Run `apm install language-perl6` in terminal or install `language-perl6` through the package manager
 by pressing `Ctrl + ,` and then choosing the `Install` menu on the left side and searching.
@@ -46,10 +46,13 @@ highlighted Perl 6 code or the whole document, even if it hasn't been saved usin
 a keyboard shortcut.
 
 # nav-marker-plus
-![Link to package on atom.io][nav-panel-plus]
+[Link to package on atom.io][nav-panel-plus]
 You can get a right panel which will show all Routine's, Classes and Operators for Perl 6 code.
 ![nav-panel-plus](/images/nav-marker-plus.png)
-
+## Instructions
+Run `apm install nav-marker-plus` or install it from the package search in Atom by pressing `Ctrl + ,` then clicking `Install` and searching for `nav-marker-plus`
+## How do I use this?
+Put the [.nav-marker-rules](/config/.nav-marker-rules) in the root of a project you are working on. In your terminal go into that folder and open Atom with `atom .` or run `atom ~/path/to/your/project`. You can also go to the `File` menus and then choose `Open Folder...`
 [script-package]: https://atom.io/packages/script
 [language-perl6]: https://atom.io/packages/language-perl6
 [nav-panel-plus]: https://atom.io/packages/nav-panel-plus

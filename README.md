@@ -1,6 +1,6 @@
-* [Syntax highlighter](#Syntax-highlighter)
-* [Perl 6 code execution](#Perl-6-code-execution)
-* [Indexing of classes, routines and operators](#Indexing-of-classes,-routines-and-operators)
+* [Syntax highlighter](#syntax-highlighter)
+* [Perl 6 code execution](#perl-6-code-execution)
+* [Indexing of classes, routines and operators](#indexing-of-classes-routines-and-operators)
 
 # Syntax highlighter
 [Package link for language-perl6 package][language-perl6]

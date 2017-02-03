@@ -42,12 +42,20 @@ Please be aware that if you do not include the `t` extension
 above, your `t` files will be highlighted with the `language-perl` highlighter unless the first line contains `use v6;`.
 
 # Perl 6 code execution
+[Link to script package on atom.io][script-package]
 ## Installation
-Requires the [language-perl6](#Syntax-highlighter) package.
-## Integration
-This package has integration with the Atom [script][script-package] package. With both this package and the `script` package you can execute
-highlighted Perl 6 code or the whole document, even if it hasn't been saved using
-a keyboard shortcut.
+Run `apm install script` and install the [syntax highlighter language-perl6](#syntax-highlighter) if you have not already done so.
+
+## How do I use this?
+Make sure you have set the grammar type to `Perl 6 FE`
+![Bottom right corner of atom](/images/atom-language-perl6.png)
+Then you can press `Ctrl + Shift + B` on Linux. For other operating systems see
+the packages [readme page][script-package].
+
+If no text is selected it will run the file direction if the file has been saved
+and you have made no modifications. If you have made changes since it was last saved,
+it will run using the current text in the screen buffer. If you have text selected
+it will evaluate only the selection. 
 
 # Indexing of classes, routines and operators
 [Link to package on atom.io for nav-marker-plus package][nav-panel-plus]

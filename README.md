@@ -1,3 +1,6 @@
+* [Syntax highlighter](#Syntax-highlighter)
+* [Perl 6 code execution](#Perl-6-code-execution)
+
 # Syntax highlighter
 [Package link for language-perl6 package][language-perl6]
 ## Instructions
@@ -45,14 +48,21 @@ This package has integration with the Atom [script][script-package] package. Wit
 highlighted Perl 6 code or the whole document, even if it hasn't been saved using
 a keyboard shortcut.
 
-# nav-marker-plus
-[Link to package on atom.io][nav-panel-plus]
+# Indexing of classes, routines and operators
+[Link to package on atom.io for nav-marker-plus package][nav-panel-plus]
 You can get a right panel which will show all Routine's, Classes and Operators for Perl 6 code.
 ![nav-panel-plus](/images/nav-marker-plus.png)
 ## Instructions
 Run `apm install nav-marker-plus` or install it from the package search in Atom by pressing `Ctrl + ,` then clicking `Install` and searching for `nav-marker-plus`
 ## How do I use this?
 Put the [.nav-marker-rules](/config/.nav-marker-rules) in the root of a project you are working on. In your terminal go into that folder and open Atom with `atom .` or run `atom ~/path/to/your/project`. You can also go to the `File` menus and then choose `Open Folder...`
+
+Eventually hopefully we will have instructions on how to make it specific to
+perl6 filetypes and make it apply globally, but for now you can use .nav-marker-rules
+as the instructions show. Any files opened in that project's window will also take on
+the config, even if they're in another folder, as long as they're still part of the
+same `Project` context in Atom.
+
 [script-package]: https://atom.io/packages/script
 [language-perl6]: https://atom.io/packages/language-perl6
 [nav-panel-plus]: https://atom.io/packages/nav-panel-plus

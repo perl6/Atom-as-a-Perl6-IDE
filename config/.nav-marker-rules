@@ -1,0 +1,6 @@
+#marker-rule: /sub\s+(?!infix|postfix|postcircumfix|prefix)([\w-']+).*{/||%1||Routine
+#marker-rule: /sub\s+(?!infix|postfix|postcircumfix|prefix)([\w-']+)\s*\(/||%1||Routine
+#marker-rule: /sub\s+(infix|postfix|postcircumfix|prefix):<([\S]+)>.*{/||%1 %2||Operator
+#marker-rule: /sub\s+(infix|postfix|postcircumfix|prefix):«([\S]+)».*{/||%1 %2||Operator
+#marker-rule: /class\s+([\w-']+)/||%1||Class
+#marker-rule: /method\s+([\w-']+)/||%1||Method

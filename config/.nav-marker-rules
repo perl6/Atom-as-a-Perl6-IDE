@@ -4,3 +4,4 @@
 #marker-rule: /sub\s+(infix|postfix|postcircumfix|prefix):«([\S]+)».*{/||%1 %2||Operator
 #marker-rule: /class\s+([\w-']+)/||%1||Class
 #marker-rule: /method\s+([\w-']+)/||%1||Method
+#marker-rule: /token\s+([\w-']+)\s+{/||token %1||Grammar

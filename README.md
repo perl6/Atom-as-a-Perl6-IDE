@@ -114,7 +114,11 @@ Github also will respect EditorConfig when in the editing mode, if you are editi
 a file on Github itself.
 
 ## How do I use this?
-You can install the plugin using `apm install editorconfig` in terminal or through the menus
+You can install the plugin using `apm install editorconfig` in terminal or through the menus.
+
+Place this [template .editorconfig file](/config/.editorconfig) in the root of
+your project or home folder.
+
 EditorConfig can work recursively, so you can have the EditorConfig file, which is named
 `.editorconfig` in the base of your project, or you could have one in your home folder.
 The site describes most of the options and provides a very good example.

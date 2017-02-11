@@ -6,6 +6,7 @@ To that question, please see these three enhancements to the Atom text editor:
 * [Syntax highlighter](#syntax-highlighter)
 * [Perl 6 code execution](#perl-6-code-execution)
 * [Indexing of classes, routines and operators](#indexing-of-classes-routines-and-operators)
+* [editorconfig: editor agnostic per project/filetype management of indentation level, line ending and indentation type and more](#editorconfig)
 
 # Syntax highlighter
 [Package link for language-perl6 package][language-perl6]
@@ -73,7 +74,7 @@ the packages [readme page][script-package].
 If no text is selected it will run the file direction if the file has been saved
 and you have made no modifications. If you have made changes since it was last saved,
 it will run using the current text in the screen buffer. If you have text selected
-it will evaluate only the selection. 
+it will evaluate only the selection.
 
 # Indexing of classes, routines and operators
 [Link to package on atom.io for nav-marker-plus package][nav-panel-plus]
@@ -96,6 +97,35 @@ as the instructions show. Any files opened in that project's window will also ta
 the config, even if they're in another folder, as long as they're still part of the
 same `Project` context in Atom.
 
+# editorconfig
+For full details on how EditorConfig works, see [editorconfig.org][editorconfig].
+
+## What does this do?
+Editor agnostic per project/filetype management of indentation level, line ending and indentation type and more.
+
+They have packages for almost all popular editors, including vim, Emacs,
+TextMate and so many more.
+Github also respects your EditorConfig. For example, if you use tabs for indentation, you
+can set the `indent_size = 4`, when people view your project they will see it
+with an indentation level of 4 in your project, instead of showing 8 indentation
+levels.
+
+Github also will respect EditorConfig when in the editing mode, if you are editing
+a file on Github itself.
+
+## How do I use this?
+You can install the plugin using `apm install editorconfig` in terminal or through the menus
+EditorConfig can work recursively, so you can have the EditorConfig file, which is named
+`.editorconfig` in the base of your project, or you could have one in your home folder.
+The site describes most of the options and provides a very good example.
+Also check out the [the package's page][editorconfig-package] for more info about
+the Atom package itself.
+
+One key thing to remember is when EditorConfig sees `root = true` then it stops
+any further looking through the directorys.
+
+[editorconfig]: http://editorconfig.org/
+[editorconfig-package]: https://atom.io/packages/editorconfig
 [script-package]: https://atom.io/packages/script
 [language-perl6]: https://atom.io/packages/language-perl6
 [nav-panel-plus]: https://atom.io/packages/nav-panel-plus

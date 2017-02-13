@@ -7,6 +7,8 @@ root = true
 [*]
 end_of_line = lf
 insert_final_newline = true
+# Set this if you want to trim trailing whitespace
+trim_trailing_whitespace = true
 
 ## Perl 6 files
 # Matches multiple files with brace expansion notation

@@ -103,8 +103,9 @@ For full details on how EditorConfig works, see [editorconfig.org][editorconfig]
 ## What does this do?
 Editor agnostic per project/filetype management of indentation level, line ending and indentation type and more.
 
-They have packages for almost all popular editors, including vim, Emacs,
-TextMate and so many more.
+They have packages for almost all popular editors, including [vim][vim-ec],
+[Emacs][emacs-ec],
+[TextMate][textmate-ec] and [so many more][ec-download].
 Github also respects your EditorConfig. For example, if you use tabs for indentation, you
 can set the `indent_size = 4`, when people view your project they will see it
 with an indentation level of 4 in your project, instead of showing 8 indentation
@@ -128,6 +129,10 @@ the Atom package itself.
 One key thing to remember is when EditorConfig sees `root = true` then it stops
 any further looking through the directorys.
 
+[ec-download]: http://editorconfig.org/#download
+[textmate-ec]: https://github.com/Mr0grog/editorconfig-textmate
+[vim-ec]: https://github.com/editorconfig/editorconfig-vim
+[emacs-ec]: https://github.com/editorconfig/editorconfig-emacs
 [editorconfig]: http://editorconfig.org/
 [editorconfig-package]: https://atom.io/packages/editorconfig
 [script-package]: https://atom.io/packages/script

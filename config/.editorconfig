@@ -10,7 +10,7 @@ insert_final_newline = true
 
 ## Perl 6 files
 # Matches multiple files with brace expansion notation
-[*.{p6,pl6,pm,pm6,t]
+[*.{p6,pl6,pm,pm6,t}]
 # Set default charset
 charset = utf-8
 indent_style = space

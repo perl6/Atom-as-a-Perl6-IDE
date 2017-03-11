@@ -77,15 +77,15 @@ it will run using the current text in the screen buffer. If you have text select
 it will evaluate only the selection.
 
 # Indexing of classes, routines and operators
-[Link to package on atom.io for nav-marker-plus package][nav-panel-plus]
+[Link to package on atom.io for nav-panel-plus package][nav-panel-plus]
 You can get a right panel which will show all Routines, Classes and Operators for Perl 6 code.
-![nav-panel-plus](/images/nav-marker-plus.png)
+![nav-panel-plus](/images/nav-panel-plus.png)
 
 ### What does this do?
 This will display a sidebar on the right side of the editor that lists all of the subroutines, classes, and operators in the current file. Clicking on any of these things will take you to where they are defined.
 
 ### Installation
-Run `apm install nav-marker-plus` or install it from the package search in Atom by pressing `Ctrl + ,` then clicking `Install` and searching for `nav-marker-plus`
+Run `apm install nav-panel-plus` or install it from the package search in Atom by pressing `Ctrl + ,` then clicking `Install` and searching for `nav-panel-plus`
 
 ### How do I use this?
 Put the [.nav-marker-rules](/config/.nav-marker-rules) in the root of a project you are working on. In your terminal go into that folder and open Atom with `atom .` or run `atom ~/path/to/your/project`. You can also go to the `File` menus and then choose `Open Folder...`

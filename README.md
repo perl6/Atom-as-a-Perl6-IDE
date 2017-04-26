@@ -91,9 +91,13 @@ Run `apm install nav-panel-plus` or install it from the package search in Atom b
 Put the [.nav-marker-rules](/config/.nav-marker-rules) in the root of a project you are working on. In your terminal go into that folder and open Atom with `atom .` or run `atom ~/path/to/your/project`. You can also go to the `File` menus and then choose `Open Folder...`
 
 ### Note
-Eventually we will have instructions on how to make it specific to
-perl6 filetypes and make it apply globally, but for now you can use .nav-marker-rules
-as the instructions show. Any files opened in that project's window will also take on
+~~Eventually we will have instructions on how to make it specific to
+perl6 filetypes and make it apply globally,~~
+
+We have a Pull Request that adds this functionality into the package: https://github.com/0tho/atom-nav-panel-plus/pull/8
+
+But for now you can use .nav-marker-rules as the instructions show. Any files
+opened in that project's window will also take on
 the config, even if they're in another folder, as long as they're still part of the
 same `Project` context in Atom.
 

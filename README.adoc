@@ -31,6 +31,7 @@ So you've started to write some code in **Perl 6**. You may now be asking yourse
 "How can I make this programming experience [underline]#_more awesome_#?"
 
 To that question, please see these enhancements to the Atom text editor.
+// NOTE's or WARNING's can be declared with the following syntax below. How cool!
 
 NOTE: When installing with `apm`, the install may not take effect until Atom is restarted.
 Installing from the `Install` menu should take effect in most cases, except for certain packages which actually do need Atom to be restarted.

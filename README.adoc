@@ -1,5 +1,8 @@
 // This file created using AsciiDoc which is similar to Markdown
 // Unlike Markdown, you can create comments
+// Unlike Markdown, there can only be one top level (= Foo) title which in AsciiDoc
+// becomes the documents name.
+// Below this you must use (== Section) and deeper
 = Using Atom as a Perl 6 IDE
 // Options for the document's rendering are declared after the first header
 // Add a Table of Contents and show it after the Preamble (AsciiDoc supports
@@ -27,7 +30,10 @@ So you've started to write some code in **Perl 6**. You may now be asking yourse
 // You can d__o it like thi__s // Though most cases you don't need to do that
 "How can I make this programming experience [underline]#_more awesome_#?"
 
-To that question, please see these three enhancements to the Atom text editor:
+To that question, please see these enhancements to the Atom text editor.
+
+NOTE: When installing with `apm`, the install may not take effect until Atom is restarted.
+Installing from the `Install` menu should take effect in most cases, except for certain packages which actually do need Atom to be restarted.
 
 == Syntax highlighter
 // This link would be declared as [Package link for language-perl6 package][language-perl6] using
@@ -125,7 +131,7 @@ This will display a sidebar on the right side of the editor that lists all of th
 Run `apm install **nav-panel-plus**` or install it from the package search in Atom by pressing `Ctrl + ,` then clicking `Install` and searching for `nav-panel-plus`
 
 === How do I use this?
-Put the [.nav-marker-rules](/config/.nav-marker-rules) in the root of a project you are working on. In your terminal go into that folder and open Atom with `atom .` or run `atom ~/path/to/your/project`. You can also go to the `File` menus and then choose `Open Folder...`
+Put the file:config/.nav-marker-rules[.nav-marker-rules] in the root of a project you are working on. In your terminal go into that folder and open Atom with `atom .` or run `atom ~/path/to/your/project`. You can also go to the `File` menus and then choose `Open Folder...`
 
 === Note
 // Strikethrough is declared like this in AsciiDoc: (GitHub flavored markdown declares like ~~this~~)
@@ -143,7 +149,7 @@ same `Project` context in Atom.
 == editorconfig
 For full details on how EditorConfig works, see {editorconfig}[editorconfig.org].
 
-== What does this do?
+=== What does this do?
 Editor agnostic per project/filetype management of indentation level,
 line ending and indentation type and more.
 
@@ -158,7 +164,7 @@ levels.
 Github also will respect EditorConfig when in the editing mode, if you are editing
 a file on Github itself.
 
-== How do I use this?
+=== How do I use this?
 You can install the plugin using `apm install **editorconfig**` in terminal or through the menus.
 
 Place this link:config/.editorconfig[template .editorconfig file] in the root of
@@ -172,3 +178,17 @@ the Atom package itself.
 
 One key thing to remember is when EditorConfig sees `root = true` then it stops
 any further looking through the directorys.
+
+== Filetype Based Icons for Tabs
+You can show different icons, similar to how many browsers set each tab to have
+an icon on each tab. This will be determined based on the filetype. Perl 6
+documents will be distinguishable by a butterfly.
+
+=== What does this do?
+This is how it makes your tabs look: image:images/file-icons-screenshot.png[file-icons package screenshot of tab icons]
+
+=== Installation
+Run `apm install **file-icons**` or install it from the package search in Atom by pressing `Ctrl + ,` then clicking `Install` and searching for `file-icons`
+
+=== How do I use this?
+Put the file:config/.nav-marker-rules[.nav-marker-rules] in the root of a project you are working on. In your terminal go into that folder and open Atom with `atom .` or run `atom ~/path/to/your/project`. You can also go to the `File` menus and then choose `Open Folder...`

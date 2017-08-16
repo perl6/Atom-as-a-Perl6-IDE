@@ -2,7 +2,10 @@
 // Unlike Markdown, you can create comments
 = Using Atom as a Perl 6 IDE
 // Options for the document's rendering are declared after the first header
-:toc :preamble
+// Add a Table of Contents and show it after the Preamble (AsciiDoc supports
+// auto-generated Table of Contents! :-)
+:toc: preamble
+// Hide the URI scheme for autolinked urls
 :hide-uri-scheme:
 
 // In Markdown links are declared:
@@ -18,7 +21,11 @@
 :language-perl6: https://atom.io/packages/language-perl6
 :nav-panel-plus: https://atom.io/packages/nav-panel-plus
 
-So you've started to write some code in Perl 6. You may now be asking yourself, "How can I make this programming experience _more awesome_?"
+So you've started to write some code in **Perl 6**. You may now be asking yourself,
+// Underline with: [underline]#underlined text#
+// italicize with _italicized text_ at word boundaries. If you need to underline between words
+// You can d__o it like thi__s // Though most cases you don't need to do that
+"How can I make this programming experience [underline]#_more awesome_#?"
 
 To that question, please see these three enhancements to the Atom text editor:
 
@@ -43,6 +50,8 @@ line includes `use v6`, a shebang whose last term before any whitespace is
 `perl6` , `=begin pod`, or `my class`.
 
 If you need to manually set it, click on the on the bottom right corner of Atom and select `Perl 6 FE`:
+// images with image:: need an empty line above it
+// images with image: (only one colon) are inline instead of block — they also don't need any whitespace before them
 
 image::images/atom-language-perl6.png[Bottom right corner of atom]
 
@@ -52,8 +61,9 @@ precedence. To remedy this you can:
 
 * Click the language name in the status-bar (`Ctrl+Shift+L`) and select `Perl 6 FE`
 * If you want to permanently change the preferences for a file type,
-  add the following to your `config.cson` (*Edit* → *Config*):
+  add the following to your `config.cson` (*_Edit_* → *_Config_*):
 
+// You can declare codeblocks just like markdown
 ```coffee
 "*":
   core:
@@ -81,6 +91,8 @@ If you do not ever expect to write Perl 5 code, then you may as well make these 
 This will allow you to execute portions of your code that you highlight with your cursor as if it was run on the command line.
 
 === Installation
+// Unlike markdown, you can stylize text inside single backticks
+// Link to a section with <<Section name, Link text>>
 Run `apm install **script**` and install the <<Syntax highlighter, syntax highlighter language-perl6>> if you have not already done so.
 
 === How do I use this?

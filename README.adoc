@@ -132,12 +132,14 @@ This will display a sidebar on the right side of the editor that lists all of th
 Run `apm install **nav-panel-plus**` or install it from the package search in Atom by pressing `Ctrl + ,` then clicking `Install` and searching for `nav-panel-plus`
 
 === How do I use this?
-Put the file:config/.nav-marker-rules[.nav-marker-rules] in the root of a project you are working on. In your terminal go into that folder and open Atom with `atom .` or run `atom ~/path/to/your/project`. You can also go to the `File` menus and then choose `Open Folder...`
+Put the link:config/.nav-marker-rules[.nav-marker-rules] in the root of a project you are working on. In your terminal go into that folder and open Atom with `atom .` or run `atom ~/path/to/your/project`. You can also go to the `File` menus and then choose `Open Folder...`
 
 === Note
 // Strikethrough is declared like this in AsciiDoc: (GitHub flavored markdown declares like ~~this~~)
 [line-through]#Eventually we will have instructions on how to make it specific to
 perl6 filetypes and make it apply globally,#
+
+Update: The PR was reverted, and a new one needs to be submitted which edits `lib/.ctags` (see PR link).
 
 We have a Pull Request that adds this functionality into the package:
 https://github.com/0tho/atom-nav-panel-plus/pull/8
@@ -190,6 +192,3 @@ This is how it makes your tabs look: image:images/file-icons-screenshot.png[file
 
 === Installation
 Run `apm install **file-icons**` or install it from the package search in Atom by pressing `Ctrl + ,` then clicking `Install` and searching for `file-icons`
-
-=== How do I use this?
-Put the file:config/.nav-marker-rules[.nav-marker-rules] in the root of a project you are working on. In your terminal go into that folder and open Atom with `atom .` or run `atom ~/path/to/your/project`. You can also go to the `File` menus and then choose `Open Folder...`
